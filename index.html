@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Which is better? Google Lens or Mobilenet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+            <div class="container">
+        <h1 id="casestudyheader">Google Lens or Mobilenet?</h1>
+        <div class="row">
+            <div class="casestudysample">
+                <img class="img-responsive" src="breadboard.jpg">
+                <h4 class="text-capitalize"><kbd>breadboard</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">test image 1</h5>
+                <p class="ptagsample">Output on Google Lens - 
+                    <span>  </span>
+                    Output on Mobilenet - 
+                    <span> </span>
+                </p>
+            </div>
+            <div class="casestudysample">
+                <img class="img-responsive" src="cap.jpg">
+                <h4 class="text-capitalize"><kbd>cap</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">test image 2</h5>
+                <p class="ptagsample">Output on Google Lens - 
+                    <span>  </span>
+                    Output on Mobilenet - 
+                    <span> </span>
+                </p>
+            </div>
+            <div class="casestudysample">
+                <img class="img-responsive" src="clip.jpg">
+                <h4 class="text-capitalize"><kbd>clip</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">test image 3</h5>
+                <p class="ptagsample">Output on Google Lens - 
+                    <span>  </span>
+                    Output on Mobilenet - 
+                    <span> </span>
+                </p>
+            </div>
+            <div class="row">
+                <div class="casestudysample">
+                    <img class="img-responsive" src="eraser.jpg">
+                    <h4 class="text-capitalize"><kbd>eraser</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">test image 4</h5>
+                    <p class="ptagsample">Output on Google Lens - 
+                        <span>  </span>
+                        Output on Mobilenet - 
+                        <span> </span>
+                    </p>
+                </div>
+                <div class="casestudysample">
+                    <img class="img-responsive" src="fan.jpg">
+                    <h4 class="text-capitalize"><kbd>fan</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">test image 5</h5>
+                    <p class="ptagsample">Output on Google Lens - 
+                        <span>  </span>
+                        Output on Mobilenet - 
+                        <span> </span>
+                    </p>
+                </div>
+                <div class="casestudysample">
+                    <img class="img-responsive" src="hdmicable.jpg">
+                    <h4 class="text-capitalize"><kbd>HDMI Cable</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">test image 6</h5>
+                    <p class="ptagsample">Output on Google Lens - 
+                        <span>  </span>
+                        Output on Mobilenet - 
+                        <span> </span>
+                    </p>
+                </div>
+            </div>
+            <div class="casestudysample">
+                <img class="img-responsive" src="headphone.jpg">
+                <h4 class="text-capitalize"><kbd>headphones</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">test image 7</h5>
+                <p class="ptagsample">Output on Google Lens - 
+                    <span>  </span>
+                    Output on Mobilenet - 
+                    <span> </span>
+                </p>
+            </div>
+            <div class="casestudysample">
+                <img class="img-responsive" src="pencilcstudy.jpg">
+                <h4 class="text-capitalize"><kbd>pencil</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">test image 8</h5>
+                <p class="ptagsample">Output on Google Lens - 
+                    <span>  </span>
+                    Output on Mobilenet - 
+                    <span> </span>
+                </p>
+            </div>
+            <div class="casestudysample">
+                <img class="img-responsive" src="phone.jpg">
+                <h4 class="text-capitalize"><kbd>mobile phone</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">test image 9</h5>
+                <p class="ptagsample">Output on Google Lens - 
+                    <span>  </span>
+                    Output on Mobilenet - 
+                    <span> </span>
+                </p>
+            </div>
+        </div>
+        <div class="casestudysample">
+            <img class="img-responsive" src="sharpenercstudy.jpg">
+            <h4 class="text-capitalize"><kbd>sharpener</kbd></h4>
+            <hr>
+            <h5 class="text-success text-left text-capitalize">test image 10</h5>
+            <p class="ptagsample">Output on Google Lens - 
+                <span>  </span>
+                Output on Mobilenet - 
+                <span> </span>
+            </p>
+        </div>
+        <div class="casestudysample">
+            <img class="img-responsive" src="switchboard.jpg">
+            <h4 class="text-capitalize"><kbd>switchboard</kbd></h4>
+            <hr>
+            <h5 class="text-success text-left text-capitalize">test image 11</h5>
+            <p class="ptagsample">Output on Google Lens - 
+                <span>  </span>
+                Output on Mobilenet - 
+                <span> </span>
+            </p>
+        </div>
+        <div class="casestudysample">
+            <img class="img-responsive" src="washingmachine.jpg">
+            <h4 class="text-capitalize"><kbd>washing machine</kbd></h4>
+            <hr>
+            <h5 class="text-success text-left text-capitalize">test image 12</h5>
+            <p class="ptagsample">Output on Google Lens - 
+                <span>  </span>
+                Output on Mobilenet - 
+                <span> </span>
+            </p>
+        </div>
+    </div>
+    <div class="conclusion">
+        <h4 id="end">Conclusion</p>
+            <hr>
+            <p id="result">Coming soon</p>
+    </div>
+</div>
+    </center>
+    </body>
+</html>
