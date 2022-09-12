@@ -1,5 +1,6 @@
 body {
     background-image:url("casestudybackground.png");
+    color: white;
 }
 .row::after {
     content: "";
@@ -49,6 +50,27 @@ span {
 #end, #result {
     color: white;
 }
-img {
-    opacity: 1;
+
+.objects {
+    float: center;
+    width: 85%;
+    padding: 5px;
+    border: 1px solid #c7c7c7;
+    background-color: palevioletred;
+    opacity: 0.8;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.objects img {
+    border-radius: 20px;
+    margin-right: 700px;
+    width: 25%;
+    height: 50%;
+}
+.outputon {
+    background: white;
+    border-radius: 20px;
+    color: black;
+    width: 30%;
+    margin: 5px;
 }
